@@ -1,0 +1,28 @@
+.moodboard-item {
+  position: absolute; /* Key for drag and drop positioning */
+  background-color: var(--item-bg);
+  color: var(--item-text);
+  border: 1px solid var(--item-border);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: grab; /* Indicate it's draggable */
+  user-select: none; /* Prevent text selection inside the item while dragging */
+  min-width: 50px;
+  min-height: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.moodboard-item:active {
+  cursor: grabbing;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000 !important; /* Bring to front when active/dragging */
+}
+
+.moodboard-item blockquote {
+  margin: 0;
+  font-style: italic;
+}
+
+.moodboard-item p {
+  margin: 0;
+}
