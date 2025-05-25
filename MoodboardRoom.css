@@ -1,0 +1,7 @@
+.moodboard-room {
+  flex-grow: 1; /* Take up remaining space */
+  position: relative; /* For absolute positioning of items */
+  background-color: var(--bg-color);
+  overflow: auto; /* Allow scrolling if items go out of bounds, though ideally the room itself is large enough */
+  height: 100vh; /* Take full viewport height */
+}
